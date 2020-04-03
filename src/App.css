@@ -1,38 +1,104 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-container {
+  background-color: whitesmoke;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-container > h1 {
+  padding: 20px 0;
+}
+
+.right-container {
+  background-color: whitesmoke;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-container > h1 {
+  padding: 20px 0;
+}
+
+.right-container > .add-container {
+  background-color: olive;
+}
+
+.right-container > .background-container {
+  background-color: #81815f;
+}
+
+.add-container {
+  background-color: royalblue;
+  height: 350px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.add-container > input {
+  width: 80%;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-container > img {
+  height: 230px;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container > button {
+  margin: 0 10px;
+}
+
+.background-container {
+  background-color: #7d9eff;
+  height: 350px;
+  width: 90%;
+  margin: 20px 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.meme-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.meme-container > input {
+  width: 80%;
+  margin: 10px;
+}
+
+.meme-container > img {
+  height: 230px;
+}
+
+.meme-container > .spread {
+  margin-top: 10px;
+}
+
+.meme-container > h2 {
+  padding: 10px 0;
 }
